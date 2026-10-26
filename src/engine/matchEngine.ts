@@ -1,0 +1,1 @@
+export { insertIntoTray } from './trayManager'

@@ -1,0 +1,9 @@
+export const BOARD_WIDTH = 7
+export const BOARD_HEIGHT = 7
+export const TILE_SIZE = 1
+export const TRAY_CAPACITY = 7
+export const DEFAULT_POWERS = { undo: 3, shuffle: 2, hold: 1, hint: 3 }
+export const SCORE_PER_MATCH = 100
+export const COMPLETION_BONUS = 500
+export const COMBO_BONUS = 20
+export const SOLVER_NODE_BUDGET = 4500
