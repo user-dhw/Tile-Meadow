@@ -1,0 +1,25 @@
+{
+  "name": "Tile Meadow · 牧场三消",
+  "short_name": "牧场三消",
+  "description": "原创牧场主题层叠三消游戏",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#edf1df",
+  "theme_color": "#e9f0e3",
+  "icons": [
+    {
+      "src": "./icon-192.png?v=2",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png?v=2",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

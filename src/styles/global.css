@@ -17,3 +17,29 @@
 @media(min-width:621px) and (max-width:850px) and (min-height:501px){.app-shell--playing .mode-nav{top:89px}.app-shell--playing .game-layout{grid-template-columns:140px minmax(280px,475px);gap:20px}.app-shell--playing .game-topline{height:35px}.app-shell--playing .board-landscape{width:clamp(210px,calc(100svh - 460px),400px)}.app-shell--playing .game-field{padding-left:16px;padding-right:16px}.app-shell--playing .game-bottomline{max-width:475px}}
 @media(max-height:740px) and (max-width:620px){.app-shell--playing .site-header{height:56px}.app-shell--playing .mode-nav{top:64px}.app-shell--playing .play-screen{padding-top:56px}.app-shell--playing .game-topline{height:32px}.app-shell--playing .board-landscape{width:min(100%,32svh)}}
 @media(max-height:500px) and (min-width:621px){.app-shell--playing .site-header{height:58px}.app-shell--playing .game-topline{height:30px}.app-shell--playing .journey-panel{display:none}.app-shell--playing .game-layout{display:block;max-width:850px;margin:auto}.app-shell--playing .game-field{display:grid;grid-template-columns:minmax(220px,1fr) minmax(280px,1fr);grid-template-areas:'heading heading' 'board feedback' 'board powers' 'board tray';column-gap:20px;padding:12px 20px}.app-shell--playing .field-heading{grid-area:heading}.app-shell--playing .board-landscape{grid-area:board;width:clamp(190px,calc(100svh - 135px),320px);max-width:100%;margin:5px auto 0}.app-shell--playing .game-board{inset:2%}.app-shell--playing .feedback-line{grid-area:feedback;min-height:24px;padding-top:5px;font-size:9px}.app-shell--playing .powerup-bar{grid-area:powers;position:static;flex-direction:row;padding:8px 0 11px;gap:18px}.app-shell--playing .collection-wrap{grid-area:tray;padding-top:10px}.app-shell--playing .collection-tray{max-width:100%}.app-shell--playing .tray-slot{max-height:none}.app-shell--playing .game-bottomline{margin:8px auto;max-width:850px}.app-shell--playing .site-footer{height:35px}.app-shell--playing .mode-nav{padding:3px}.app-shell--playing .mode-nav button{padding:8px 10px}.app-shell--playing .brand small{display:none}}
+
+/* Keep the collection tray comfortably above mobile browser controls. */
+@media (max-width: 620px) and (min-height: 741px) {
+  .app-shell--playing .site-header { height: 70px; }
+  .app-shell--playing .mode-nav { top: 83px; }
+  .app-shell--playing .play-screen {
+    padding-top: 54px;
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  .app-shell--playing .game-topline { height: 36px; }
+  .app-shell--playing .game-field { padding-top: 13px; padding-bottom: 13px; }
+  .app-shell--playing .mobile-score { margin-top: 10px; }
+  .app-shell--playing .board-landscape { width: 94%; margin: 0 auto; }
+  .app-shell--playing .feedback-line { min-height: 25px; }
+  .app-shell--playing .powerup-bar { padding: 6px 0 12px; }
+  .app-shell--playing .collection-wrap { padding-top: 10px; }
+  .app-shell--playing .collection-label { margin-bottom: 6px; }
+  .app-shell--playing .tray-instruction { margin-top: 8px; }
+}
+@media (max-width: 620px) and (max-height: 740px) {
+  .app-shell--playing .mobile-score { margin-top: 8px; }
+  .app-shell--playing .feedback-line { min-height: 22px; }
+  .app-shell--playing .powerup-bar { padding: 6px 0 10px; }
+  .app-shell--playing .collection-wrap { padding-top: 8px; }
+  .app-shell--playing .collection-label { margin-bottom: 4px; }
+}
